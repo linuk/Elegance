@@ -1,0 +1,164 @@
+/*===============================
+=            General            =
+===============================*/
+body{
+}
+
+h1.e-title{
+	font-size: 4em;
+}
+
+i.e-icon{
+	margin-bottom: 10px;
+}
+
+.e-subtitle{
+	line-height: 2em;
+	padding-bottom: 2em;
+}
+
+h1.title.e-white.is-2,
+h2.title.e-white.is-2, 
+h1.e-white.subtitle.is-5,
+.e-white{
+	color: #fff
+}
+
+.hero.is-dark .title.e-black{
+	color: #333
+}
+
+.e-align-right{
+	text-align: right;
+}
+
+
+figure.image img{
+	object-fit: cover;
+}
+
+/* Background pattern from subtlepatterns.com */
+.patternBackground{
+	background: url("../imgs/general/pattern.png") repeat;
+	background-attachment: fixed;
+}
+
+/*=====  End of General  ======*/
+
+
+/*==================================
+=            Navigation            =
+==================================*/
+
+
+
+/*=====  End of Navigation  ======*/
+
+
+/*==============================
+=            Banner            =
+==============================*/
+
+div.e-banner{
+	background: -webkit-linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/banner/background.jpg") center center no-repeat;
+	background: -o-linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/banner/background.jpg") center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/banner/background.jpg") center center no-repeat;
+}
+
+
+/*=====  End of Banner  ======*/
+
+
+/*=============================
+=            About            =
+=============================*/
+
+.e-about{
+	background: -webkit-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/about/background.jpg") center center no-repeat;
+	background: -o-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/about/background.jpg") center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/about/background.jpg") center center no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
+/*=====  End of About  ======*/
+
+
+/*================================
+=            Features            =
+================================*/
+div.e-column{
+	margin-top: 40px;
+}
+
+.e-features-1{
+	background: -webkit-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature1.jpg") center center no-repeat;
+	background: -o-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature1.jpg") center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature1.jpg") center center no-repeat; 
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.e-features-2{
+	background: -webkit-linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .9)) 0% 0% / cover, url("../imgs/features/feature2.jpg") center center no-repeat;
+	background: -o-linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .9)) 0% 0% / cover, url("../imgs/features/feature2.jpg") center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .9)) 0% 0% / cover, url("../imgs/features/feature2.jpg") center center no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.e-features-3{
+	background: -webkit-linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature3.jpg") center center no-repeat;
+	background: -o-linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature3.jpg") center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature3.jpg") center center no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+/*=====  End of Features  ======*/
+
+
+/*===============================
+=            Pricing            =
+===============================*/
+.e-pricing{
+	background: -webkit-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/pricing/background.jpg") center center no-repeat;
+	background: -o-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/pricing/background.jpg") center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/pricing/background.jpg") center center no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
+
+/*=====  End of Pricing  ======*/
+
+
+/*===================================
+=            Testimonial            =
+===================================*/
+
+
+
+
+
+
+/*=====  End of Testimonial  ======*/
+
+
+/*===============================
+=            Contact            =
+===============================*/
+
+
+
+/*=====  End of Contact  ======*/
+
+
+/*==============================
+=            Footer            =
+==============================*/
+
+
+
+/*=====  End of Footer  ======*/
