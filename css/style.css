@@ -5,7 +5,7 @@ body{
 }
 
 h1.e-title{
-	font-size: 4em;
+	font-size: 3em;
 }
 
 i.e-icon{
@@ -24,23 +24,47 @@ h1.e-white.subtitle.is-5,
 	color: #fff
 }
 
-.hero.is-dark .title.e-black{
+.hero.is-dark .title.e-black,
+.e-black{
 	color: #333
+}
+
+a.e-white-link,
+.is-dark.hero a.e-white-link{
+	color: #bbb
+}
+
+a.e-white-link:hover,
+.is-dark.hero a.e-white-link:hover{
+	color: #eee
 }
 
 .e-align-right{
 	text-align: right;
 }
 
-
 figure.image img{
 	object-fit: cover;
 }
 
 /* Background pattern from subtlepatterns.com */
-.patternBackground{
+.e-pattern-blackground{
 	background: url("../imgs/general/pattern.png") repeat;
 	background-attachment: fixed;
+}
+
+.e-trans-5,
+.e-trans-5:hover{
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+
+}
+
+.e-hr{
+	background-color: #999;
 }
 
 /*=====  End of General  ======*/
@@ -60,9 +84,14 @@ figure.image img{
 ==============================*/
 
 div.e-banner{
-	background: -webkit-linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/banner/background.jpg") center center no-repeat;
-	background: -o-linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/banner/background.jpg") center center no-repeat;
-	background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/banner/background.jpg") center center no-repeat;
+	background: -webkit-linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/banner/background.jpg") center center no-repeat;
+	background: -o-linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/banner/background.jpg") center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/banner/background.jpg") center center no-repeat;
+	/*background:url("../imgs/banner/background.jpg");*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 
@@ -74,13 +103,22 @@ div.e-banner{
 =============================*/
 
 .e-about{
-	background: -webkit-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/about/background.jpg") center center no-repeat;
-	background: -o-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/about/background.jpg") center center no-repeat;
-	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/about/background.jpg") center center no-repeat;
+	background: -webkit-linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/about/background.jpg") center center no-repeat;
+	background: -o-linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/about/background.jpg") center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/about/background.jpg") center center no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 }
 
+
+.e-about-2{
+	background: -webkit-linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)) 0% 0% / cover, url("../imgs/about/background.jpg") center center no-repeat;
+	background: -o-linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)) 0% 0% / cover, url("../imgs/about/background.jpg") center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)) 0% 0% / cover, url("../imgs/about/background.jpg") center center no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: #333
+}
 
 /*=====  End of About  ======*/
 
@@ -88,7 +126,7 @@ div.e-banner{
 /*================================
 =            Features            =
 ================================*/
-div.e-column{
+div.e-feature-column{
 	margin-top: 40px;
 }
 
@@ -96,15 +134,15 @@ div.e-column{
 	background: -webkit-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature1.jpg") center center no-repeat;
 	background: -o-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature1.jpg") center center no-repeat;
 	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature1.jpg") center center no-repeat; 
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-size: cover;
 }
 
 .e-features-2{
-	background: -webkit-linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .9)) 0% 0% / cover, url("../imgs/features/feature2.jpg") center center no-repeat;
-	background: -o-linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .9)) 0% 0% / cover, url("../imgs/features/feature2.jpg") center center no-repeat;
-	background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .9)) 0% 0% / cover, url("../imgs/features/feature2.jpg") center center no-repeat;
-	background-attachment: fixed;
+	background: -webkit-linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9)) 0% 0% / cover, url("../imgs/features/feature2.jpg") center center no-repeat;
+	background: -o-linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9)) 0% 0% / cover, url("../imgs/features/feature2.jpg") center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9)) 0% 0% / cover, url("../imgs/features/feature2.jpg") center center no-repeat;
+	background-attachment: scroll;
 	background-size: cover;
 }
 
@@ -112,31 +150,26 @@ div.e-column{
 	background: -webkit-linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature3.jpg") center center no-repeat;
 	background: -o-linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature3.jpg") center center no-repeat;
 	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature3.jpg") center center no-repeat;
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-size: cover;
 }
 /*=====  End of Features  ======*/
 
 
-/*===============================
-=            Pricing            =
-===============================*/
-.e-pricing{
-	background: -webkit-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/pricing/background.jpg") center center no-repeat;
-	background: -o-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/pricing/background.jpg") center center no-repeat;
-	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/pricing/background.jpg") center center no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-}
-
-
-
-/*=====  End of Pricing  ======*/
-
-
 /*===================================
 =            Testimonial            =
 ===================================*/
+
+.e-card{
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.e-image-filter{
+	filter: grayscale(50%);
+}
+
+
 
 
 
@@ -147,9 +180,42 @@ div.e-column{
 
 
 /*===============================
-=            Contact            =
+=            Contact           =
 ===============================*/
+.e-contact{
+	background: -webkit-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover,url("../imgs/contact/background.jpg") center center no-repeat;
+	background: -o-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/contact/background.jpg") center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, ul("../imgs/contact/background.jpg") center center no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+}
 
+
+input.e-contact-form,
+textarea.e-contact-form{
+	background-color: rgba(0, 0, 0, 0);
+	color: #fff;
+	border-color: #aaa
+}
+
+input.e-contact-form:active,
+input.e-contact-form:focus,
+textarea.e-contact-form:active,
+textarea.e-contact-form:focus{
+	border-color: #fff
+}
+
+.e-contact-bottom-overlay{
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: .5;
+	z-index: 100;
+	/*background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)) 0% 10% ;*/
+}
 
 
 /*=====  End of Contact  ======*/
@@ -159,6 +225,24 @@ div.e-column{
 =            Footer            =
 ==============================*/
 
+.e-footer{
+	background: #111;
+}
 
+.e-social-icons{
+	color: #555;
+}
+
+.e-social-icons:hover{
+	color: #999;
+}
+
+.e-footer-address{
+	padding-top: 20px; 
+}
+
+.e-licence-container{
+	color: #555
+}
 
 /*=====  End of Footer  ======*/
