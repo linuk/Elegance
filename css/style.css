@@ -1,20 +1,32 @@
 /*===============================
 =            General            =
 ===============================*/
-body{
+body, input, textarea, button{
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 h1.e-title{
 	font-size: 3em;
 }
 
+h2.e-subtitle{
+	font-size: 1.5rem;
+	line-height: 1.5em;
+	padding-bottom: 2em;
+}
+
 i.e-icon{
 	margin-bottom: 10px;
 }
 
-.e-subtitle{
-	line-height: 2em;
-	padding-bottom: 2em;
+.content p.e-content-p{
+	font-size: 1.3rem;
+	line-height: 1.5rem;
+}
+
+.e-nav-item{
+	font-size: 1.2rem;
+	line-height: 1.2em;	
 }
 
 h1.title.e-white.is-2,
@@ -67,12 +79,32 @@ figure.image img{
 	background-color: #999;
 }
 
+
+
 /*=====  End of General  ======*/
 
 
 /*==================================
 =            Navigation            =
 ==================================*/
+
+.nav div.nav-left,
+span.nav-toggle,
+.hero-head .nav{
+	background: #242424;
+	z-index: 101;
+}
+
+/* keep toggle the opacity of icon background to 1 */
+@media screen and (max-width: 768px) {
+	.hero.is-dark .nav-toggle:hover{
+		background-color: #363636;
+	}
+}
+
+.nav-menu{
+	z-index: 1;
+}
 
 
 
@@ -134,7 +166,7 @@ div.e-feature-column{
 	background: -webkit-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature1.jpg") center center no-repeat;
 	background: -o-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature1.jpg") center center no-repeat;
 	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature1.jpg") center center no-repeat; 
-	background-attachment: scroll;
+	background-attachment: fixed;
 	background-size: cover;
 }
 
@@ -142,7 +174,7 @@ div.e-feature-column{
 	background: -webkit-linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9)) 0% 0% / cover, url("../imgs/features/feature2.jpg") center center no-repeat;
 	background: -o-linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9)) 0% 0% / cover, url("../imgs/features/feature2.jpg") center center no-repeat;
 	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9)) 0% 0% / cover, url("../imgs/features/feature2.jpg") center center no-repeat;
-	background-attachment: scroll;
+	background-attachment: fixed;
 	background-size: cover;
 }
 
@@ -150,7 +182,7 @@ div.e-feature-column{
 	background: -webkit-linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature3.jpg") center center no-repeat;
 	background: -o-linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature3.jpg") center center no-repeat;
 	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature3.jpg") center center no-repeat;
-	background-attachment: scroll;
+	background-attachment: fixed;
 	background-size: cover;
 }
 /*=====  End of Features  ======*/
@@ -163,6 +195,7 @@ div.e-feature-column{
 .e-card{
 	border-radius: 5px;
 	overflow: hidden;
+	background: #eee;
 }
 
 .e-image-filter{
@@ -204,17 +237,6 @@ input.e-contact-form:focus,
 textarea.e-contact-form:active,
 textarea.e-contact-form:focus{
 	border-color: #fff
-}
-
-.e-contact-bottom-overlay{
-	width: 100%;
-	height: 50%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	opacity: .5;
-	z-index: 100;
-	/*background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)) 0% 10% ;*/
 }
 
 
