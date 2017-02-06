@@ -4,14 +4,21 @@
 	<meta charset="UTF-8">
 	<title>Elegance</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- css, fonts libs -->
+	<link rel="stylesheet" href="libs/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/bulma.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- javascript libs -->
 	<script type="text/javascript" src="libs/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="libs/jquery-ui.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="js/script.js"></script>
+
 </head>
+
 <body>
 
 <!-- Navigation && Banner-->
@@ -23,7 +30,7 @@
 	      <div class="container">
 	        <div class="nav-left">
 	          <a class="nav-item" href="#">
-	            <h1 class="subtitle">Elegance</h1>
+	            <h1 class="subtitle start-animation animation-slow" data-animation="fadeInDown" >Elegance</h1>
 	          </a>
 	        </div>
 	        <span class="nav-toggle e-trans-5">
@@ -31,22 +38,22 @@
 	          <span></span>
 	          <span></span>
 	        </span>
-	        <div class="nav-right nav-menu e-trans-5">
-	          <a class="nav-item e-trans-5 e-nav-item" href="#features">Features</a>
-	          <a class="nav-item e-trans-5 e-nav-item" href="#about">About</a>
-	          <a class="nav-item e-trans-5 e-nav-item" href="#testimonials">Testimonials</a>
-	          <a class="nav-item e-trans-5 e-nav-item" href="#contact">Contact</a>
+	        <div class="nav-right nav-menu e-trans-5 start-animation animation-slow" data-animation="fadeInDown">
+	          <a class="nav-item e-trans-5 e-nav-item" data-href="#features" href="#">Features</a>
+	          <a class="nav-item e-trans-5 e-nav-item" data-href="#about" href="#">About</a>
+	          <a class="nav-item e-trans-5 e-nav-item" data-href="#testimonials" href="#">Testimonials</a>
+	          <a class="nav-item e-trans-5 e-nav-item" data-href="#contact" href="#">Contact</a>
 	        </div>
 	      </div>
 	    </header>
 	  </div>
 
 	  <!-- Banner --> 
-	  <div class="hero-body e-banner">
-	    <div class="container has-text-centered">
-	      <h1 class="title is-1">Elegance</h1>
-	      <h2 class="e-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
-	      <button class="button is-dark is-inverted is-outlined e-trans-5" id="explore">Explore</button>
+	  <div class="hero-body e-banner start-animation animation-slow" data-animation="fadeIn">
+		<div class="container has-text-centered">
+			<h1 class="title is-1 start-animation " data-animation="fadeInDown" >Elegances</h1>
+			<h2 class="e-subtitle start-animation animation-delay-second animation-slow" data-animation="fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+			<a class=" button is-dark is-inverted is-outlined e-trans-5 start-animation animation-delay-third animation-slow" data-animation="fadeInUp" data-href="#features">Explore</a>
 	    </div>
 	  </div>
 	</section>
@@ -60,13 +67,13 @@
 				<div class="columns is-multiline">
 			
 					<!-- Features title-->
-					<div class="column is-8 is-offset-2">
+					<div class="column is-8 is-offset-2 animation" data-animation="fadeInUp">
 						<h1 class="title e-title e-white">Features</h1>	
 						<h2 class="e-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</h2>
 					</div>
 
 					<!-- Feature 1-->
-					<div class="column e-feature-column is-one-quarter">
+					<div class="column e-feature-column is-one-quarter animation animation-delay-second" data-animation="fadeInRight">
 						<div class="has-text-centered">
 							<i class="fa fa-trophy fa-5x e-icon" aria-hidden="true"></i>
 							<h1 class="title e-white">Awards</h1>
@@ -76,7 +83,7 @@
 					</div>
 					
 					<!-- Feature 2-->
-					<div class="column e-feature-column is-one-quarter">
+					<div class="column e-feature-column is-one-quarter animation animation-delay-third" data-animation="fadeInRight">
 						<div class="has-text-centered">
 							<i class="fa fa-comments fa-5x e-icon" aria-hidden="true"></i>
 							<h1 class="title e-white">Commnuication</h1>
@@ -86,7 +93,7 @@
 					</div>
 					
 					<!-- Feature 3-->
-					<div class="column e-feature-column is-one-quarter">
+					<div class="column e-feature-column is-one-quarter animation animation-delay-forth" data-animation="fadeInLeft">
 						<div class="has-text-centered">
 							<i class="fa fa-flash fa-5x e-icon" aria-hidden="true"></i>
 							<h1 class="title e-white">Fast</h1>
@@ -96,7 +103,7 @@
 					</div>
 				
 					<!-- Feature 4-->
-					<div class="column e-feature-column is-one-quarter">
+					<div class="column e-feature-column is-one-quarter animation" data-animation="fadeInLeft">
 						<div class="has-text-centered">
 							<i class="fa fa-flag fa-5x e-icon" aria-hidden="true"></i>
 							<h1 class="title e-white">Goal</h1>
@@ -110,11 +117,11 @@
 	</section>
 
 	<!-- About -->
-	<section class="hero is-medium is-dark" id="about">
-		<div class="hero-body e-about e-features-1">
+	<section class="hero is-small is-dark" id="about">
+		<div class="hero-body e-about-1">
 			<div class="container">
 				<!-- About title-->
-				<div class="columns has-text-centered">
+				<div class="columns has-text-centered animation" data-animation="fadeInUp">
 					<div class="column is-8 is-offset-2">
 						<h1 class="title e-title">About</h1>	
 						<h2 class="e-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</h2>
@@ -123,60 +130,54 @@
 				</div>
 
 				<div class="columns">
-					<div class="column is-4 ">
-						<img class="is-16by9" src="imgs/features/feature1.jpg">
+					<div class="column is-4  animation" data-animation="fadeInLeft">
+						<img class="is-16by9 e-about-img" src="imgs/about/about1.jpg">
 					</div>
-					<div class="column is-8">
+					<div class="column is-8 animation" data-animation="fadeInRight">
 						<div class="content">
 							<h1 class="title e-white">Exclusive</h1>
 							<p class="e-white e-content-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							<p><a href="#" class="e-white-link e-trans-5">Read More</a></p>
+							quis nostrud exercitation ulim id est laborum.</p>
+							<button href="#" class="button is-dark is-inverted is-outlined e-trans-5 is-1">Read More</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="hero-body e-about-2 e-features-2">
+		<div class="hero-body e-about-2">
 			<div class="container">
 				<div class="columns">
-					<div class="column is-8 ">
-						<div class="content ">
+					<div class="column is-8  animation" data-animation="fadeInLeft">
+						<div class="content">
 							<h1 class="title e-white e-align-right">Modern</h1>
 							<p class="e-white e-align-right e-content-p" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							<p class="e-align-right"><a href="#" class="e-white-link e-trans-5 ">Read More</a></p>
+							<p class="e-align-right"><button href="#" class="button is-dark is-inverted is-outlined e-trans-5 is-1 ">Read More</button></p>
 						</div>
 					</div>
-					<div class="column is-4">
-						<img class="is-16by9" src="imgs/features/feature2.jpg">
+					<div class="column is-4 animation" data-animation="fadeInRight">
+						<img class="is-16by9 e-about-img" src="imgs/about/about2.jpg">
 					</div>
 				</div>
 			</div>
 		</div>
 
 
-		<div class="hero-body e-about e-features-3">
+		<div class="hero-body e-about-3">
 			<div class="container">
 				<div class="columns">
-					<div class="column is-4 ">
-						<img class="is-16by9 " src="imgs/features/feature3.jpg">
+					<div class="column is-4 animation" data-animation="fadeInLeft">
+						<img class="is-16by9 e-about-img" src="imgs/about/about3.jpg">
 					</div>
 					<div class="column is-8">
-						<div class="content ">
+						<div class="content  animation" data-animation="fadeInRight">
 							<h1 class="title e-white">Elegant</h1>
 							<p class="e-white e-content-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							tempor incididunt ut labore etteur sint occaecat cupidatat non
 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							<p><a href="#" class="e-white-link e-trans-5">Read More</a></p>
+							<button href="#" class="button is-dark is-inverted is-outlined e-trans-5 is-1">Read More</button>
 						</div>
 					</div>
 				</div>
@@ -191,7 +192,7 @@
 			<div class="container">
 
 				<!-- Testimonial title-->
-				<div class="columns  has-text-centered e-white">
+				<div class="columns  has-text-centered e-white animation" data-animation="fadeInDown">
 					<div class="column is-8 is-offset-2">
 						<h1 class="title e-title e-white">Testimonials</h1>	
 						<h2 class="e-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</h2>
@@ -201,7 +202,7 @@
 				<!-- Testimonials-->
 				<div class="columns">
 					<!-- Testimonial 1 -->
-					<div class="column is-4">
+					<div class="column is-4 animation" data-animation="fadeInLeft">
 						<div class="card e-card">
 							<div class="card-image">
 								<figure class="image is-16by9 e-image-filter">
@@ -221,7 +222,7 @@
 					</div>
 
 					<!-- Testimonial 2 -->
-					<div class="column is-4">
+					<div class="column is-4 animation" data-animation="fadeInUp">
 						<div class="card e-card">
 							<div class="card-image">
 								<figure class="image is-16by9 e-image-filter">
@@ -241,7 +242,7 @@
 					</div>
 
 					<!-- Testimonial 3 -->
-					<div class="column is-4">
+					<div class="column is-4 animation" data-animation="fadeInRight">
 						<div class="card e-card">
 							<div class="card-image">
 								<figure class="image is-16by9 e-image-filter">
@@ -267,7 +268,7 @@
 
 	<!-- Contact -->
 	<section class="hero is-dark is-medium e-contact" id="contact">
-		<div class="hero-body">
+		<div class="hero-body animation" data-animation="fadeInRight">
 			<div class="container">
 				<!-- Testimonial title-->
 				<div class="columns has-text-centered e-white is-multiline">
@@ -303,44 +304,45 @@
 			<!-- social icons container -->
 	        <div>
         		<a href="#" class="e-social-icons e-trans-5">
-	        		<span class="fa-stack fa-lg fa-2x">
+	        		<span class="fa-stack fa-lg fa-2x animation " data-animation="fadeInUp">
 					  <i class="fa fa-circle fa-stack-2x "></i>
 					  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
 					</span>
 				</a>
 				
 				<a href="#" class="e-social-icons e-trans-5">
-					<span class="fa-stack fa-lg fa-2x">
+					<span class="fa-stack fa-lg fa-2x animation animation-delay-second" data-animation="fadeInUp">
 					  <i class="fa fa-circle fa-stack-2x"></i>
 					  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
 					</span>
 				</a>
 				
 				<a href="#" class="e-social-icons e-trans-5">
-					<span class="fa-stack fa-lg fa-2x">
+					<span class="fa-stack fa-lg fa-2x animation animation-delay-third" data-animation="fadeInUp">
 					  <i class="fa fa-circle fa-stack-2x"></i>
 					  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
 					</span>
 				</a>
 				
 				<a href="#" class="e-social-icons e-trans-5">
-					<span class="fa-stack fa-lg fa-2x">
+					<span class="fa-stack fa-lg fa-2x animation animation-delay-forth" data-animation="fadeInUp">
 					  <i class="fa fa-circle fa-stack-2x"></i>
 					  <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
 					</span>
 				</a>
-
-				<p class="e-footer-address">6 Emery Ln, Chippenham SN15 3JH, UK</p>
-				<p>+44 3069 990902</p>
-				<p>info@elegancee.com</p>
+				<div class=" animation animation-delay-forth" data-animation="fadeInUp">
+					<p class="e-footer-address">6 Emery Ln, Chippenham SN15 3JH, UK</p>
+					<p>+44 3069 990902</p>
+					<p>info@elegancee.com</p>
+				</div>
 
 	        </div>
 
 			
-			<hr class="e-hr">
+			<hr class="e-hr animation" data-animation="fadeInLeft">
 
 			<!-- licence container -->
-			<div class="e-licence-container">
+			<div class="e-licence-container animation" data-animation="fadeInRight">
    		        <p>Powered by <a class="e-white-link e-trans-5" href="http://bulma.io/">Bulma</a>, Elegance Designed by <a class="e-white-link e-trans-5" href="http://linuk.org">Jheng Lin</a>.</p>
    		         <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
 		        	<img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />

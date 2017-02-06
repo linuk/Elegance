@@ -1,10 +1,8 @@
 $(function(){
 
-
 /*===============================
 =            General            =
 ===============================*/
-
 
 
 
@@ -18,9 +16,9 @@ $(function(){
 
 
 // Adding listen events to each nav item
-$('a.nav-item').on('click',(event)=>{
+$('a').on('click',(event)=>{
 	$('html, body').animate({
-		scrollTop: $($(event.target).attr('href')).offset().top
+		scrollTop: $($(event.target).data('href')).offset().top
 	}, 1000)
 	if(is_toggle_nav_bar()) toggle_nav_bar()
 })
@@ -28,7 +26,7 @@ $('a.nav-item').on('click',(event)=>{
 
 
 // Set nav-menu to the outside of the window of its height
-$('.nav-menu').css("top", -$('.nav-menu').height())
+// $('.nav-menu').css("top", -$('.nav-menu').height())
 
 // Whenever the toggle icon is clicked
 $('.nav-toggle').on('click',()=>{
@@ -43,31 +41,23 @@ function is_toggle_nav_bar(){
 
 function toggle_nav_bar(){
 
-	let menu=$('.nav-menu')
+	let menu = $('div.nav-menu')
+	let toggle = $('.nav-toggle')
 	
 	// if navbar is ALREADY active / expanded
-	if(is_toggle_nav_bar()){
-		menu.animate({ 
-			top: menu.height()*(-1)
-		},'1000')
-
-		// remove active class after 1s, the complete functio does not work.
-		setTimeout(()=>{
-			menu.removeClass('is-active')
-			$('.nav-toggle').removeClass('is-active')
-			console.log("close");
-		},'1000')
-
-	}
+	if( !$(toggle).hasClass('is-active') && !$(menu).hasClass('is-active')){
+		$(toggle).addClass('is-active')
+		$(menu).addClass('animated fadeInDown is-active')
+	}	
 
 	// if navbar is NOT active / expanded	
-	if(!is_toggle_nav_bar()){
-		menu.toggleClass('is-active').animate({ 
-			top: $('.nav').height()
+	else if($(toggle).hasClass('is-active') && $(menu).hasClass('is-active')){
+		
+		let animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+		$(menu).addClass('fadeOutUp').one(animationEnd,()=>{
+			$(menu).removeClass('is-active animated fadeInDown fadeOutUp')
+			$(toggle).removeClass('is-active')
 		})
-		$('.nav-toggle').addClass('is-active')
-			console.log("oepn");
-
 	}
 
 }
@@ -142,6 +132,45 @@ $("#explore").click(function() {
 
 
 /*=====  End of Footer  ======*/
+
+
+
+/*=================================
+=            Animation            =
+=================================*/
+
+// Animate in banner page after the document is ready
+$('.start-animation').each((i,item)=>{
+	let animation = $(item).data('animation')
+	$(item).addClass('animated '+animation)	
+})
+
+
+// scroll to specific element in the page 
+$(document).on('scroll',()=>{	
+	function is_in_the_view(element)
+    {
+    	let offset_from_top = 0.8
+		let window_view_top = $(window).scrollTop()
+		let window_view_bottom = window_view_top + $(window).height()*offset_from_top
+        let element_top = $(element).offset().top
+        return ((element_top <= window_view_bottom) && (element_top >= window_view_top))
+    }
+
+	$('.animation').each((i,item)=>{
+		if(is_in_the_view(item)){
+			let animation = $(item).data('animation')
+			$(item).addClass('animated '+animation)
+		}
+	})	
+
+})
+
+
+
+
+/*=====  End of Animation  ======*/
+
 
 
 });

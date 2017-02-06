@@ -116,10 +116,10 @@ span.nav-toggle,
 ==============================*/
 
 div.e-banner{
-	background: -webkit-linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/banner/background.jpg") center center no-repeat;
-	background: -o-linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/banner/background.jpg") center center no-repeat;
+	-webkit-background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/banner/background.jpg") center center no-repeat;
+	-moz-background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/banner/background.jpg") center center no-repeat;
+	-o-background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/banner/background.jpg") center center no-repeat;
 	background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/banner/background.jpg") center center no-repeat;
-	/*background:url("../imgs/banner/background.jpg");*/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -134,23 +134,39 @@ div.e-banner{
 =            About            =
 =============================*/
 
-.e-about{
-	background: -webkit-linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/about/background.jpg") center center no-repeat;
-	background: -o-linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/about/background.jpg") center center no-repeat;
-	background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/about/background.jpg") center center no-repeat;
-	background-attachment: fixed;
+.e-about-1{
+	-webkit-background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/about/about1.jpg") center center no-repeat fixed;
+	-moz-background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/about/about1.jpg") center center no-repeat fixed;
+	-o-background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/about/about1.jpg") center center no-repeat fixed;
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/about/about1.jpg") center center no-repeat fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 }
-
 
 .e-about-2{
-	background: -webkit-linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)) 0% 0% / cover, url("../imgs/about/background.jpg") center center no-repeat;
-	background: -o-linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)) 0% 0% / cover, url("../imgs/about/background.jpg") center center no-repeat;
-	background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)) 0% 0% / cover, url("../imgs/about/background.jpg") center center no-repeat;
-	background-attachment: fixed;
+	-webkit-background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9)) 0% 0% / cover, url("../imgs/about/about2.jpg") center center no-repeat fixed;
+	-moz-background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9)) 0% 0% / cover, url("../imgs/about/about2.jpg") center center no-repeat fixed;
+	-o-background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9)) 0% 0% / cover, url("../imgs/about/about2.jpg") center center no-repeat fixed;
+	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9)) 0% 0% / cover, url("../imgs/about/about2.jpg") center center no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
-	color: #333
 }
+
+.e-about-3{
+	-webkit-background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/about/about3.jpg") center center no-repeat  fixed;
+	-moz-background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/about/about3.jpg") center center no-repeat  fixed;
+	-o-background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/about/about3.jpg") center center no-repeat ;
+	background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/about/about3.jpg") center center no-repeat  fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 
 /*=====  End of About  ======*/
 
@@ -162,29 +178,7 @@ div.e-feature-column{
 	margin-top: 40px;
 }
 
-.e-features-1{
-	background: -webkit-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature1.jpg") center center no-repeat;
-	background: -o-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature1.jpg") center center no-repeat;
-	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature1.jpg") center center no-repeat; 
-	background-attachment: fixed;
-	background-size: cover;
-}
 
-.e-features-2{
-	background: -webkit-linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9)) 0% 0% / cover, url("../imgs/features/feature2.jpg") center center no-repeat;
-	background: -o-linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9)) 0% 0% / cover, url("../imgs/features/feature2.jpg") center center no-repeat;
-	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9)) 0% 0% / cover, url("../imgs/features/feature2.jpg") center center no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-}
-
-.e-features-3{
-	background: -webkit-linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature3.jpg") center center no-repeat;
-	background: -o-linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature3.jpg") center center no-repeat;
-	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/features/feature3.jpg") center center no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-}
 /*=====  End of Features  ======*/
 
 
@@ -218,8 +212,7 @@ div.e-feature-column{
 .e-contact{
 	background: -webkit-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover,url("../imgs/contact/background.jpg") center center no-repeat;
 	background: -o-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/contact/background.jpg") center center no-repeat;
-	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, ul("../imgs/contact/background.jpg") center center no-repeat;
-	background-attachment: fixed;
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)) 0% 0% / cover, url("../imgs/contact/background.jpg") center center no-repeat;
 	background-size: cover;
 	position: relative;
 }
@@ -268,3 +261,75 @@ textarea.e-contact-form:focus{
 }
 
 /*=====  End of Footer  ======*/
+
+
+/*=================================
+=            Animation            =
+=================================*/
+
+.animation{
+	opacity: 0;
+	animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+	-o-animation-duration: 2s;
+}
+
+.animation-delay-second{
+	animation-delay: .5s;
+	-moz-animation-delay: .5s;
+	-webkit-animation-delay: .5s;
+	-o-animation-delay: .5s;
+}
+
+.animation-delay-third{
+	animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	-o-animation-delay: 1s;
+}
+
+.animation-delay-forth{
+	animation-delay: 1.5s;
+	-moz-animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
+	-o-animation-delay: 1.5s;
+}
+
+.animation-slow{
+	animation-duration: 4s;
+	-moz-animation-duration: 4s;
+	-webkit-animation-duration: 4s;
+	-o-animation-duration: 4s;
+}
+/*=====  End of Animation  ======*/
+
+
+/*==================================
+=            Responsive            =
+==================================*/
+
+
+/* for mobile device */
+@media screen and (max-width: 992px)  {
+	
+	/* Change the background-attachment fixed to scroll */
+	.e-about-1,
+	.e-about-2,
+	.e-about-3,
+	.e-contact{
+		background-attachment: scroll;
+	}	
+
+	/* Don't display images in about sections */
+	.e-about-img{ display: none; }
+
+	/* No Animation*/
+	.animation{
+		opacity: 1;
+	}
+}
+
+
+/*=====  End of Responsive  ======*/
+
