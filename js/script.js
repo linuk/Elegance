@@ -150,7 +150,7 @@ $('.start-animation').each((i,item)=>{
 $(document).on('scroll',()=>{	
 	function is_in_the_view(element)
     {
-    	let offset_from_top = 0.8
+    	let offset_from_top = 0.9
 		let window_view_top = $(window).scrollTop()
 		let window_view_bottom = window_view_top + $(window).height()*offset_from_top
         let element_top = $(element).offset().top

@@ -269,10 +269,10 @@ textarea.e-contact-form:focus{
 
 .animation{
 	opacity: 0;
-	animation-duration: 2s;
-	-moz-animation-duration: 2s;
-	-webkit-animation-duration: 2s;
-	-o-animation-duration: 2s;
+	animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	-o-animation-duration: 1s;
 }
 
 .animation-delay-second{
@@ -297,10 +297,10 @@ textarea.e-contact-form:focus{
 }
 
 .animation-slow{
-	animation-duration: 3s;
-	-moz-animation-duration: 3s;
-	-webkit-animation-duration: 3s;
-	-o-animation-duration: 3s;
+	animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+	-o-animation-duration: 2s;
 }
 /*=====  End of Animation  ======*/
 
@@ -324,10 +324,6 @@ textarea.e-contact-form:focus{
 	/* Don't display images in about sections */
 	.e-about-img{ display: none; }
 
-	/* No Animation*/
-	.animation{
-		opacity: 1;
-	}
 }
 
 
