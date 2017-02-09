@@ -53,7 +53,7 @@ function toggle_nav_bar(){
 	// if navbar is NOT active / expanded	
 	else if($(toggle).hasClass('is-active') && $(menu).hasClass('is-active')){
 		
-		let animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+		let animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
 		$(menu).addClass('fadeOutUp').one(animationEnd,()=>{
 			$(menu).removeClass('is-active animated fadeInDown fadeOutUp')
 			$(toggle).removeClass('is-active')
