@@ -1,0 +1,36 @@
+=animation($animate)
+	-webkit-animation: $animate
+	-moz-animation: $animate
+	-ms-animation: $animate
+	-o-animation: $animate
+	animation: $animate
+
+=animation-delay($time)
+	animation-delay: $time
+	-moz-animation-delay: $time
+	-webkit-animation-delay: $time
+	-o-animation-delay: $time
+
+=animation-duration($time)
+	animation-duration: $time
+	-moz-animation-duration: $time
+	-webkit-animation-duration: $time
+	-o-animation-duration: $time
+
+
+=background_gradient($opa1, $opa2, $url)
+	background: rgba( 0 ,0 ,0 ,0.8) /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(rgba(0, 0, 0, $opa1), rgba(0, 0, 0, $opa2)) 0% 0% / cover, url($url) center center no-repeat /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(rgba(0, 0, 0, $opa1), rgba(0, 0, 0, $opa2)) 0% 0% / cover, url($url) center center no-repeat /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgba(0, 0, 0, $opa1), rgba(0, 0, 0, $opa2)) 0% 0% / cover, url($url) center center no-repeat /* For Firefox 3.6 to 15 */
+	background: linear-gradient(rgba(0, 0, 0, $opa1), rgba(0, 0, 0, $opa2)) 0% 0% / cover, url($url) center center no-repeat /* Standard syntax */
+	background-size: cover
+
+
+
+=transition($time)
+	-webkit-transition: all $time ease-in-out
+	-moz-transition: all $time ease-in-out
+	-ms-transition: all $time ease-in-out
+	-o-transition: all $time ease-in-out
+	transition: all $time ease-in-out

@@ -1,0 +1,279 @@
+/*=================================
+ *            Variables           
+ *================================*/
+
+@import prefix
+
+// Colors
+$title_white: #fff
+$link_white: #bbb
+$link_white_hover: #eee 
+
+$title_black: #333
+$title_black_hover: #555
+
+$navbar_bg: #242424
+$navbar_bg_hober: #363636
+
+$icon_black: $title_black
+$icon_black_hover: $title_black_hover
+
+$footer_bg: #111
+
+// Fonts
+$main_font: 'Josefin Sans', sans-serif
+
+
+/*=====  End of Variables  ======*/
+
+
+
+/*===============================
+ *            General           =
+ *==============================*/
+
+body, 
+input, 
+textarea, 
+button
+	font-family: $main_font
+
+
+h1.e-title
+	font-size: 3em
+
+
+h2.e-subtitle
+	font-size: 1.5rem
+	line-height: 1.5em
+	padding-bottom: 2em
+
+
+i.e-icon
+	margin-bottom: 10px
+
+
+.content p.e-content-p
+	font-size: 1.3rem
+	line-height: 1.5rem
+
+
+.e-nav-item
+	font-size: 1.2rem
+	line-height: 1.2em	
+
+
+h1.title.e-white.is-2,
+h2.title.e-white.is-2, 
+h1.e-white.subtitle.is-5,
+.e-white
+	color: $title_white
+
+
+.hero.is-dark .title.e-black,
+.e-black
+	color: $title_black
+
+
+a.e-white-link,
+.is-dark.hero a.e-white-link
+	color: $link_white
+
+
+a.e-white-link:hover,
+.is-dark.hero a.e-white-link:hover
+	color: $link_white_hover
+
+
+.e-align-right
+	text-align: right
+
+
+figure.image img
+	object-fit: cover
+
+
+/* Background pattern from subtlepatterns.com */
+.e-pattern-blackground
+	background: url("../imgs/general/pattern.png") repeat
+	background-attachment: fixed
+
+.e-trans-5,
+.e-trans-5:hover
+	+transition(.3s)
+
+.e-hr
+	background-color: #999
+
+
+/*=====  End of General  ======*/
+
+
+/*==================================
+ *            Navigation           =
+ *================================*/
+
+.nav div.nav-left,
+span.nav-toggle,
+.hero-head .nav
+	background: $navbar_bg
+	z-index: 101
+
+.nav-menu
+	z-index: 1
+
+/*=====  End of Navigation  ======*/
+
+
+/*==============================
+ *            Banner           =
+ *============================*/
+
+div.e-banner
+	+background_gradient(.1, .8, "../imgs/banner/background.jpg")
+
+/*=====  End of Banner  ======*/
+
+
+/*=============================
+ *           About            =
+ *===========================*/
+
+.e-about-1
+	+background_gradient(.5, .8, "../imgs/about/about1.jpg")
+	background-attachment: fixed
+.e-about-2
+	+background_gradient(.8, .9, "../imgs/about/about2.jpg")
+	background-attachment: fixed
+
+.e-about-3
+	+background_gradient(.9, .8, "../imgs/about/about3.jpg")
+	background-attachment: fixed
+
+/*=====  End of About  ======*/
+
+
+/*================================
+ *            Features            =
+ *===============================*/
+
+div.e-feature-column
+	margin-top: 40px
+
+
+/*=====  End of Features  ======*/
+
+
+/*===================================
+ *           Testimonial            =
+ *==================================*/
+
+.e-card
+	overflow: hidden
+	border-radius: 5px
+	background: #eee
+
+
+.e-image-filter
+	filter: grayscale(50%)
+
+
+/*=====  End of Testimonial  ======*/
+
+
+/*===============================
+ *            Contact           =
+ *==============================*/
+
+.e-contact
+	+background_gradient(.5, .8, "../imgs/contact/background.jpg")
+	position: relative
+
+textarea.e-contact-form
+	background-color: rgba(0, 0, 0, 0)
+	border-color: #aaa
+	color: $title_white
+	&:active,
+	&:focus
+		border-color: $title_white
+
+input.e-contact-form
+	@extend textarea.e-contact-form
+
+/*=====  End of Contact  ======*/
+
+
+/*==============================
+ *            Footer            =
+ *=============================*/
+
+.e-footer
+	background: $footer_bg
+
+	.e-licence-container
+		color: $icon_black
+
+	.e-footer-address
+		padding-top: 20px 
+
+	.e-social-icons
+		color: $title_black
+		&:hover
+			color: $icon_black_hover
+
+/*=====  End of Footer  ======*/
+
+
+/*=================================
+ *            Animation            =
+ *================================*/
+
+.animation
+	opacity: 0
+	+animation-duration(1s)
+
+.animation-delay-second
+	+animation-delay(0.5s)
+
+.animation-delay-third
+	+animation-delay(1s)
+
+.animation-delay-forth
+	+animation-delay(1.5s)
+
+.animation-slow
+	+animation-duration(2s)
+
+/*=====  End of Animation  ======*/
+
+
+/*==================================
+ *            Responsive            =
+ *=================================*/
+
+
+/* for mobile device */
+@media screen and (max-width: 768px)  
+	
+	/* keep toggle the opacity of icon background to 1 */
+	.hero.is-dark .nav-toggle:hover
+		background-color: $navbar_bg_hober
+
+	/* Change the background-attachment fixed to scroll */
+	.e-about-1,
+	.e-about-2,
+	.e-about-3,
+	.e-contact
+		background-attachment: scroll
+		
+	/* Don't display images in about sections */
+	.e-about-img 
+		display: none 
+
+	/* No animation */
+	.animation
+		+animation(none)
+		opacity: 0
+	
+
+/*=====  End of Responsive  ======*/
